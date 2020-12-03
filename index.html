@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="web.php" method="GET">
+    <section>
+        <h1>Acceso a tu Área de Cliente</h1>
+    </section>
+
+    <section>
+        <p>Elige tu documento:   </p>
+            <input type="radio" name="boton" value="1" required> DNI o targeta de residencia.
+            <br>
+            <input type="radio" name="boton" value="2" required> Pasaporte.
+      
+        </section>
+        
+        <section>
+            <p>Número de documento:
+                <input type="text" name="Doc" size="40" placeholder="DNI o targeta de residencia">
+                </p>
+            
+        </section>
+
+        <section>
+           <p>Fecha de nacimiento:<input type="date" name="Fecha de nacimiento"></p>
+        </section>
+
+        <section>
+            <input type="checkbox" name="casilla">Recuerdame  <img src="img/png-transparent-computer-icons-question-mark-others.png" alt="20" width="20" height="20" style="vertical-align: middle">
+        </section>
+
+        <section>
+            <button type="button" onclick="mensaje('Ha pulsado el botón')">
+               ENTRAR
+              </button> 
+              
+              <section>
+        <a href="https://ing.ingdirect.es/pfm/#login-dnie"> >Acceder con DNI electrónico</a> <br>
+        <a href="https://ing.ingdirect.es/pfm/#login/security-information">>Más información sobre seguridad</a>
+    </section>
+        </section>
+    </form>
+   
+</body>
+</html>
